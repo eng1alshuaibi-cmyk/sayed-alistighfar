@@ -1,0 +1,14 @@
+{
+  "name": "سيد الاستغفار | دليلك اليومي",
+  "short_name": "سيد الاستغفار",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f3",
+  "theme_color": "#073b2e",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}
+  ]
+}
