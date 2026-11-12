@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<rect width="128" height="128" rx="28" fill="#073b2e"/>
+<path d="M64 12 78 38 106 22 90 50 116 64 90 78 106 106 78 90 64 116 50 90 22 106 38 78 12 64 38 50 22 22 50 38Z" fill="none" stroke="#d6b45b" stroke-width="3"/>
+<circle cx="64" cy="64" r="24" fill="none" stroke="#d6b45b" stroke-width="2"/>
+<text x="64" y="76" text-anchor="middle" font-size="36" fill="#f5e6b8" font-family="serif">۞</text>
+</svg>
