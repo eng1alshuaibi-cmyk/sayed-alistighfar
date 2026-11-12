@@ -339,7 +339,6 @@
     // --- 3. جلب الأذكار من الـ API ---
     let azkarDataMaster = {};
     
-    // دالة سحب الأذكار من مكتبة GitHub الموثوقة (nawafalqari)
     async function fetchAzkar(categoryName) {
         const listContainer = document.getElementById('dhikr-list');
         const loader = document.getElementById('dhikr-loader');
@@ -348,7 +347,6 @@
         loader.style.display = 'block';
         
         try {
-            // جلب قاعدة البيانات مرة واحدة فقط
             if (Object.keys(azkarDataMaster).length === 0) {
                 const response = await fetch('https://raw.githubusercontent.com/nawafalqari/azkar-api/56df51279ab6eb86dc2f6202c7de26c8948331c1/azkar.json');
                 azkarDataMaster = await response.json();
@@ -359,7 +357,6 @@
             
             if (categoryData && categoryData.length > 0) {
                 categoryData.forEach((zekrObj, index) => {
-                    // الـ API يرجع الكائن كالتالي: content (النص)، count (التكرار)، description (الفضل أو الوصف)
                     const text = zekrObj.content;
                     const target = parseInt(zekrObj.count) || 1;
                     const desc = zekrObj.description || '';
@@ -388,7 +385,6 @@
         }
     }
 
-    // دالة لزيادة عداد الذكر القادم من الـ API
     window.incApiDhikr = (index, target) => {
       const countSpan = document.getElementById(`count-${index}`);
       const card = document.getElementById(`dhikr-card-${index}`);
